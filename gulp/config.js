@@ -19,7 +19,8 @@ module.exports = {
     'css'   : src + 'stylesheets/',
     'img'   : src + 'images/',
     'sprite': src + 'materials/_sprites/*.png',
-    'js'    : src + 'javascripts/'
+    'js'    : src + 'javascripts/',
+    'lib'   : ['node_modules/snapsvg/dist/snap.svg.js']
   },
 
   'dist': {
@@ -43,7 +44,7 @@ module.exports = {
   // copyするファイル
   'copy': [
     '**/*.ico',
-    'src/materials/*.*'
+    'source/materials/*.*'
   ]
 
 };

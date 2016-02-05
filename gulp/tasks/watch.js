@@ -34,6 +34,11 @@ gulp.task('watch', function(){
     gulp.start('imgMin');
   });
 
+  // ファイルが追加された時にも実行
+  gulp.watch(config.src.root+'materials/*.+(jpg|jpeg|gif|svg)', function() {
+    gulp.start('copy');
+  });
+
   // js
   gulp.watch(config.src.js+'*', ['js']);
   // gulp.watch( setPath.distDir + '**/*' , reload);
